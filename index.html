@@ -4,31 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloc de fernando</title>
+   <link rel="stylesheet" href="/css/styles.css">
+    <title>Bloc</title>
 </head>
 <body>
 
     <header>
-        <p>Setup</p>
-        <nav>
+
+    <nav>
+
+        <details open>
+            
+            <summary>
+                Setup
+            </summary>
+
             <ol>
-                <li>Google Chrome</li>
-                <li>Visual Studio Code</li>
-                <li>Figma</li>
-                <li>Github</li>
+                <li>
+                    <a href="#google-chrome">                         
+                        Google Chrome
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#visual-studio-code">
+                        Visual Studio Code
+                    </a>
+                </li>
+                    
+                <li>
+                    <a href="#figma">
+                        Figma
+                    </a>
+                </li>
+                <li>
+                    <a href="#github">
+                        Github
+                    </a>    
+                </li>
             </ol>
-    
-            <p>Conceptos esenciales del Desarrollo Web</p>
-    
-            <ol>
-                <li>Qué es HTML</li>
-                <li>Etiquetas</li>
-                <li>DOM</li>
-                <li>Semántica</li>
-                <li>Atributos</li>
-                <li>Qué es CSS</li>
-            </ol>
-        </nav>
+        </details>
+        <details>
+                <summary>
+                    Conceptos esenciales del Desarrollo Web
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#que-es-html">
+                            Qué es HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#etiquetas">
+                            Etiquetas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dom">
+                            DOM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#semantica">
+                            Semántica
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#atributos">
+                            Atributos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#css">
+                            Qué es CSS
+                        </a>
+                    </li>
+                </ol>
+        </details>
+            
+    </nav>
+
 
     </header>
 
@@ -41,9 +96,9 @@
     
     <h2> Setup </h2>
     
-    <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo Google Chrome">
+    <img src="/images/google-chrome.png" alt="Logo de Google Chrome" title="Logo Google Chrome">
     
-    <h3>Google Chrome</h3>
+    <h3 id="google-chrome">Google Chrome</h3>
     
     <p>    
         Chrome va a ser el navegador que utilizaremos en el curso 
@@ -51,9 +106,9 @@
         y herramientas de desarrollo avanzadas y de amigable uso.      
     </p>
     
-    <img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo Visual Studio Code" >
+    <img src="/images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo Visual Studio Code" >
     
-    <h3>Visual Studio Code</h3>
+    <h3 id="visual-studio-code">Visual Studio Code</h3>
     
     <p>    
         Visual Studio Code es el editor de texto más popular y potente del mercado actualmente,
@@ -63,9 +118,9 @@
         el lenguaje en el que se desemvuelva.      
     </p>
     
-    <img src="images/figma.png" alt="Logo de Figma" title="Logo Figma">
+    <img src="/images/figma.png" alt="Logo de Figma" title="Logo Figma">
     
-    <h3>Figma</h3>
+    <h3 id="figma">Figma</h3>
     
     <p>    
         Figma es una la herramienta más popular en la actualidad para entregar
@@ -74,9 +129,9 @@
         porque puede ser usado directamente desde el navegador.      
     </p>
 
-    <img src="images/github.png" alt="Logo de Github" title="Logo Github">
+    <img src="/images/github.png" alt="Logo de Github" title="Logo Github">
 
-    <h3>Github</h3>
+    <h3 id="github">Github</h3>
     
     <p>    
         Así como en Facebook te encuentran tus amigos, en Github te encuentran otras
@@ -90,19 +145,39 @@
 
     <h2>Conceptos esenciales del Desarrollo Web</h2>
 
-    <h3>Qué es HTML</h3>
+    <h3 id="que-es-html">Qué es HTML</h3>
 
     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto.
         Es el componente más básico de la web. 
         Define el significado y la estructura del contenido.
     </p>
+    <pre>
 
-    <h3>Etiquetas</h3>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+    
+    </pre>
+
+
+
+    <h3 id="etiquetas">Etiquetas</h3>
     <p>
         Las etiquetas HTML van a ayudarnos a brindar una estructura
          y semántica al contenido de nuestro website y cada una tiene características
          y usos diferentes aunque visualmente den un resultado similar.
-    </p>
+   
+   
+     </p>
 
     <p>
         Muchas etiquetas son fácil de diferencias como los headings o las imágenes y
@@ -113,7 +188,7 @@
            y que serán parte de tu día a día como Software Developer.
     </p>
 
-    <h3>DOM</h3>
+    <h3 id="dom">DOM</h3>
 
     <p>
         El Document Object Model es una estructura de árbol que representará todos
@@ -123,9 +198,9 @@
         herencias en css y que tan complejo es nuestro proyecto.
     </p>
 
-    <img src="images/dom.png" alt="Estructura de árbol que representa al DOM (Document model Object)" title="Estructura del DOM">
+    <img src="/images/dom.png" alt="Estructura de árbol que representa al DOM (Document model Object)" title="Estructura del DOM">
 
-    <h3>Semántica</h3>
+    <h3 id="semantica">Semántica</h3>
 
     <p>
         La semántica le brinda sentido a cada elemento existen en un sitio web,
@@ -141,7 +216,7 @@
         cada contenido.
     </p>
 
-    <h3>Atributos</h3>
+    <h3 id="atributos">Atributos</h3>
 
     <p>
         Los atributos le dan características extra a las etiquetas para 
@@ -151,7 +226,7 @@
         alguna etiquetas como src
     </p>
 
-    <h3>CSS</h3>
+    <h3 id="css">CSS</h3>
     
     <p>
         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) 
@@ -159,7 +234,7 @@
         la presentación de documentos HTML
     </p>
 
-<img src="images/css.png" alt="Css (Cascading Style Sheets) o Hoja de estilo en Cascada" title="Imagen de CSS">
+<img src="/images/css.png" alt="Css (Cascading Style Sheets) o Hoja de estilo en Cascada" title="Imagen de CSS">
 
     <h3>Modelo de caja</h3>
     <p>
@@ -194,11 +269,16 @@
         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
     </ul>
 
-    <h3>Modelo de caja</h3>
+    <a href="https://leonidasesteban.com" target="_blank">Página leonidas</a>
+    
+    <p>Si tienes alguna pregunta escríbeme a 
+        <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+    </p>
 
-    <img src="images/imagen-leonidas.png" alt="Programar cambió mi vida" title="Imagen de leonidas">
+    <!-- <h3>Modelo de caja</h3>
 
-    <p>Si tienes alguna pregunta escríbeme a me@leonidasesteban.com</p>
+    <img src="/images/imagen-leonidas.png" alt="Programar cambió mi vida" title="Imagen de leonidas">-->
+
 
 </body>
 </html>
