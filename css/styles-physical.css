@@ -1,8 +1,9 @@
+
 @font-face {
     font-family: charter;
     src: url('/fonts/charter-regular.otf');
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -38,6 +39,10 @@
     --gray10: #616161;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 body {
 
@@ -56,7 +61,13 @@ header{
     /* --gray10: red; / diferente manera de declarar variables en css
     para algo en especifico*/
     font-size: 14px;
+    width: 188px;
     color: var(--gray10);
+    position: absolute;
+    top: 64px;
+    left: -170px;
+
+
 }
 
 header a{
@@ -69,18 +80,30 @@ header a:hover{
 
 nav details summary{
     font-weight: bold;
+    line-height: 24px;
 
+}
+
+header li{
+    margin-bottom: 16px;
 }
 
 h1{
     font-size: 60px;
     /* margin: top right bottom left; */
-    margin: 64px 16px 52px 348px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    /* border: 10px solid red;
+    width: 400px;
+    height: 400px;
+    padding: 40px; */
+    /* border : 1px solid red; */
 }
 
-h1 + p{
+/* h1 + p{
     margin-bottom: 64px;
-}
+} */
 
 hr{
     margin: 64px 0;
@@ -99,16 +122,82 @@ h3{
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
-
+    position: relative;
+    top: 5px;
+    background: white;
+    /* width: 200px;
+    padding: 20px;
+    border: 1px solid red;
+    box-sizing: border-box; */
 }
 
 pre{
-    background: #FEC62E;    
+    background: #FEC62E;
+    padding: 40px;
+    font-family: 'roboto';
+    line-height: 24px;
 }
 
 blockquote{
     margin: 32px 0;
+    padding-left: 16px;
+    line-height: 24px;
+    font-size: 24px;
+    border-left: 4px solid var(--gray30);
 }
+
+blockquote span{
+    color: var(--gray10);
+    
+}
+
+blockquote span::before{
+    content: '-';
+    
+}
+
+.header{
+    position: sticky;
+    top: 0;
+}
+
+
+.header-content{
+    position: relative;
+}
+
+main{
+    /* background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(/images/patron.png); */
+}
+
+.wrapper{
+    width: 902px;
+    margin: auto;
+}
+
+.main-content{
+    background: white;
+    position: relative;
+    left: 125px;
+}
+
+.title{
+    background: red;
+}
+
+.services{
+    background: purple;
+}
+.pricing{
+     background: blue;
+}
+
+.debug{
+    outline: 1px solid red;
+    background: red;
+    border: 1px solid red !important;
+}
+
 
 .hero{
     background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(/images/patron.png);
@@ -146,18 +235,23 @@ blockquote{
 
 .section-content h3{
     counter-increment: titleList;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before{
-    content: counter(titleList) "." " ";
+    content: counter(titleList,decimal) ". ";
 }
 
 .section-content h3::after{
     content: '';
-    width: 192px;
+    width: 80px;
     height: 4px;
     background: var(--gray15);
-    display: block;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
 }
 
 
