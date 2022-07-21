@@ -200,7 +200,7 @@ main{
 
 
 .hero{
-    background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(/images/patron.png);
+    background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(images/patron.png);
     height: 350px;
 
 }
