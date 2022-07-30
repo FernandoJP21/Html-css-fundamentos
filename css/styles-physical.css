@@ -122,7 +122,7 @@ h3{
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
-    position: relative;
+    position: rela;
     top: 5px;
     background: white;
     /* width: 200px;
@@ -200,7 +200,7 @@ main{
 
 
 .hero{
-    background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(images/patron.png);
+    background-image:linear-gradient(to top,rgba(255,255,255,.3),transparent), url(/images/patron.png);
     height: 350px;
 
 }
